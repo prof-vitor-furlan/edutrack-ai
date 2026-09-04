@@ -4,9 +4,8 @@ Professor: Vitor Furlan de Oliveira
 2026
 
 ## Tecnologias utilizadas
-VSCode
-Gemini Code Assist
-Open Spec
-Xano
-...
-
+- VSCode
+- Gemini Code Assist
+- Open Spec
+- Xano Script
+- Node.js
