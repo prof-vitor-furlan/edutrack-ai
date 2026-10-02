@@ -1,0 +1,18 @@
+// Delete PRODUTO record
+query "produto/{produto_id}" verb=DELETE {
+  api_group = "CRUD"
+
+  input {
+    int produto_id? filters=min:1
+  }
+
+  stack {
+    db.del PRODUTO {
+      field_name = "id"
+      field_value = $input.produto_id
+    }
+  }
+
+  response = null
+  guid = "GcFD2Y_pzdI0RxA6TNNYEgaOPFI"
+}

@@ -1,0 +1,16 @@
+// Query all STATUS_SOLCANCELAMENTO records
+query status_solcancelamento verb=GET {
+  api_group = "CRUD"
+
+  input {
+  }
+
+  stack {
+    db.query STATUS_SOLCANCELAMENTO {
+      return = {type: "list"}
+    } as $status_solcancelamento
+  }
+
+  response = $status_solcancelamento
+  guid = "Ocz1Q-_L8i5zbP0ogDA-1XUrb-s"
+}

@@ -1,0 +1,18 @@
+// Delete ITEM record.
+query "item/{item_id}" verb=DELETE {
+  api_group = "CRUD"
+
+  input {
+    int item_id? filters=min:1
+  }
+
+  stack {
+    db.del ITEM {
+      field_name = "id"
+      field_value = $input.item_id
+    }
+  }
+
+  response = null
+  guid = "w579aIAzBxuqwHsU-OMB4mUo8g0"
+}
