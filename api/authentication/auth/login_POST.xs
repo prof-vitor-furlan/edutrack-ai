@@ -1,4 +1,4 @@
-// Login and retrieve an authentication token
+// Teste2
 query "auth/login" verb=POST {
   api_group = "Authentication"
 
