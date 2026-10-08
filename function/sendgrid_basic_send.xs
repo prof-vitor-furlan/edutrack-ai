@@ -50,7 +50,7 @@ function sendgrid_basic_send {
     } as $api_result
   
     precondition ($api_result.response.status == 202) {
-      error = $api_result.response.result.errors.0.message
+      error = $api_result.response.result.errors[0].message
     }
   }
 
